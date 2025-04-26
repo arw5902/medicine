@@ -30,6 +30,7 @@ from queue import Queue
 #from deepface import DeepFace
 
 args = argparse.ArgumentParser()
+args.add_argument("--basePath", default='./')
 args.add_argument("--livePath", default="http://192.168.12.193:8080/video.mjpg")
 args.add_argument("--videoDir", default='videos')
 args.add_argument("--clipSize", default=75)
@@ -38,8 +39,7 @@ args.add_argument("--sampleDir", default='samples_75')
 args.add_argument("--videoName", default='t1')
 args = args.parse_args()
 
-base_path = './MedicationDetector/'
-video_file = os.path.join(base_path, args.videoDir, args.videoName+'_.mp4')
+video_file = os.path.join(args.basePath, args.videoDir, args.videoName+'_.mp4')
 record_fname = 'csv/MedicationRecord.csv'
 video_fps = 12.5
 n_frames = 32 # sampling frame number

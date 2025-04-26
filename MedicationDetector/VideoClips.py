@@ -14,7 +14,7 @@ args.add_argument("--filePath", default='t1_.mp4')
 args.add_argument("--clipDir", default='./MedicationDetector/clip_a_75')
 args.add_argument("--clipFrameNum", default=75)
 args = args.parse_args()
-video_dir = './MedicationDetector/videos' # video_dir should already exist
+video_dir = './videos' # video_dir should already exist
 clipDir = args.clipDir
 
 if not os.path.exists(clipDir):
