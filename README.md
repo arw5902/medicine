@@ -1,7 +1,9 @@
 # Introduction
-This repository presents a live medication monitoring and advisory system that detects medicine intake behavior in real time using video input. The system leverages a ceiling-mounted indoor camera and applies the TimeSformer (GitHub https://github.com/facebookresearch/TimeSformer) video-based attention architecture to identify moments of medicine-taking from continuous video streams.
-This repository has two parts: the first part is the TimeSformer code; the second part consists of the scripts for medication behavior detection. Note that default values are provided for all scripts; check the comments at the beginning of each file to customize them.
-Not all videos and clips are uploaded to GitHub for privacy reasons.
+This repository presents a live medication monitoring system that detects medicine intake behavior in real time using video input. The system leverages a ceiling-mounted indoor camera and applies the TimeSformer (https://github.com/facebookresearch/TimeSformer) video-based attention architecture to identify moments of medicine-taking from continuous video streams.
+
+This repository has two parts: the first part is the code for using TimeSformer (processing data and model setup), and the second part includes the scripts for medication intake detection. Note that default values are provided for all scripts; check the comments at the beginning of each file to customize them.
+
+Videos and clips are not uploaded to GitHub for privacy reasons.
 
 # Setup
 ## Video Processing and Model Training
