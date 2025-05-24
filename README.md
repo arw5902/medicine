@@ -22,6 +22,8 @@ Three files: train.csv, val.csv, and test.csv, will be created in the {base}/{cl
 	cmd_ts_{clip_size}.sh  
 This will start TimeSformer according to the parameters set in the above script. Check TimeSformer’s GitHub for further information about each parameter. NUM_GPUS is set to 2 to represent the number of GPUs used to run TimeSformer.
 8. Check TimeSformer’s log file stdout.log for model accuracy for each of the clip size parameters (75/100/125). Save the best model file in the TimeSformer/checkpoints directory for each run.
+
+
 Follow the steps below to test the model file. These steps do not have to be executed on a machine with a high-end GPU, but the TimeSformer code is required for scripts to make predictions using the model. The commands should be executed from the MedicationDetector directory unless otherwise stated.
 1. Copy over the best model file for each clip size (75, 100, and 125) to the corresponding directory inside the project, for example: MedicationDetector/model/75/checkpoint_epoch_00014.pyth.
 2. Run the following command for all clip sizes (75, 100, and 125) to generate the .csv file for the ground truth of test.csv (15% of all clips sent to TimeSformer) and the model prediction side by side:  
