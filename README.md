@@ -7,7 +7,7 @@ Videos and clips are not uploaded to GitHub for privacy reasons.
 
 # Setup
 ## Video Processing and Model Training
-Follow the steps below to generate video files and run TimeSformer to obtain the model file. The commands should be executed from the MedicationDetector directory unless otherwise stated.
+Follow the steps below to generate video files and run TimeSformer to obtain the model file. The commands should be executed from the MedicationDetector directory unless otherwise stated. Make sure the code runs in the correct virtual environment.
 
 1. Record medication-taking training video samples one at a time:
 	
@@ -15,7 +15,7 @@ Follow the steps below to generate video files and run TimeSformer to obtain the
 
 	* For example, the videos are named to begin with “a” in the MedicationDetector/videos directory. Note that these videos are not uploaded to GitHub for privacy purposes.
 
-2. Divide each video into clips for each of the clip size parameters (75/100/125):  
+2. Divide each video into clips for each of the clip size parameters (75/100/125):
 	
 	* ```python VideoClips.py --clipSize {75|100|125}```
  	* The batch command for this is written in callPScripts.sh; just specify the minimum and maximum video_ids in the script.
